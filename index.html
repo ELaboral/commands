@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration Support</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+</head>
+<body>
+
+    <script>
+    $.get("nav.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
+
+    <div id="nav-placeholder"></div>
+
+
+    
+<!--end of Navigation bar-->
+
+
+<br><br>
+    <article class="center-text">
+        <div >
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                IBM App Connect allows you to simply and securely connect applications and data across all of your environments by supporting a wide range of integration styles. These range from traditional SOA to modern event, API, and microservices-based integration styles. IBM App Connect provides a single integration tool for your entire business. Whether you are a line of Business (LOB) professional in a small to medium business (SMB) looking to quickly build workflows that automate tasks, or a seasoned integrator in a large enterprise who wants to integrate and expose data across a complex ecosystem, IBM App Connect provides powerful, user-centric tooling that enables you to achieve a range of use cases.
+            </blockquote>
+        </div>
+        <div>
+            <p>IBM App Connect helps businesses to: </p>
+            <ul>
+                <li>Connect their applications and systems by supporting multiple integration styles and helping to achieve most integration use cases</li>
+                <li>Make integration possible for all users (technical and non-technical) to help automate tasks and become more productive</li>
+                <li>Move to a hybrid environment by enabling them to connect across on-premises and cloud systems and applications</li>
+            </ul>
+        </div>
+    </article>
+</body>
+</html>
